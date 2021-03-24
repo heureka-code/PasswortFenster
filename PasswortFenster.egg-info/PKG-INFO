@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: PasswortFenster
+Version: 1.0.2
+Summary: Öffnet ein Fenster zur Eingabe von Login-Daten
+Home-page: https://github.com/heureka-code/PasswortFenster
+Author: heureka-code
+License: MIT
+Download-URL: https://github.com/heureka-code/PasswortFenster/archive/1.0.0.tar.gz
+Description: #Diese Modul öffnet ein Eingabefenster für Login Daten unter Verwendung von PyQt5.
+        
+        ##Über Parameter kann Festgelegt werden, ob nur ein Passwort, oder auch Passwort wiederholen oder Username Eingabefelder erstellt werden sollen.
+        ###Der Bestätigungsbutton kann erst gedrückt werden, wenn alle vorgegebenen Felder ausgefüllt worden sind.
+        
+        ####Wenn der Bestätigungsbutton gedrückt wird, wird eine mitgegebene Funktion aufgerufen, die egal welche Felder aktiv sind die Werte Username, Passwort liefert. 
+        #####Falls kein Username abgefragt wurde, ist dieser Parameter None.
+        
+        ######Auch können alle Strings des Fensters angepasst werden, indem man ein dictionary mit den Strings in config mitgibt.
+Keywords: Passwort,Fenster,PyQt5,PasswortFenster,Login,Username
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Description-Content-Type: text/markdown
