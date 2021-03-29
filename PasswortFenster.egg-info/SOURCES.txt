@@ -11,6 +11,12 @@ PasswortFenster.egg-info/SOURCES.txt
 PasswortFenster.egg-info/dependency_links.txt
 PasswortFenster.egg-info/requires.txt
 PasswortFenster.egg-info/top_level.txt
+PasswortFenster/Konfigurationen/LabelKonfiguration.py
+PasswortFenster/Konfigurationen/PasswortWidgetStrings.py
+PasswortFenster/Konfigurationen/SubmitWidgetStrings.py
+PasswortFenster/Konfigurationen/UserWidgetStrings.py
+PasswortFenster/Konfigurationen/WindowKonfigurationen.py
+PasswortFenster/Konfigurationen/__init__.py
 PasswortFenster/__PasswortEingabeWidget/__PasswortEntry.py
 PasswortFenster/__PasswortEingabeWidget/__PasswortShowButton.py
 PasswortFenster/__PasswortEingabeWidget/__init__.py
