@@ -7,14 +7,14 @@ __status__ = "Production"
 __annotations__ = "Wird innerhalb des Pakets verwendet"
 __doc__ = """
 class _EntryLabel(QLabel):
-    # __init__
-    # Nimmt das Argument:
-    #   * config, eine Instantz der Klasse LabelWidget
+    // __init__
+    // Nimmt das Argument:
+    //   * config, eine Instantz der Klasse LabelWidget
     def __init__(self, config: LabelWidget)
     
-    # set_from_config
-    # Nimmt das Argument:
-    #   * config, eine Instantz der Klasse LabelWidget
+    // set_from_config
+    // Nimmt das Argument:
+    //   * config, eine Instantz der Klasse LabelWidget
     def set_from_config(self, config: LabelWidget)
 """
 

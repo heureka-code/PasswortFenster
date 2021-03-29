@@ -91,21 +91,24 @@ class PasswortMainWindow(QWidget):
         if user_widget:
             user_label: _EntryLabel = _EntryLabel(user_widget.label)
             self.__user_entry = _UserEntry(user_widget.entry,
-                                           on_text_changed=self.__gleich_heits_pruefer)
+                                           on_text_changed=self.__gleich_heits_pruefer,
+                                           onreturn=self.__on_submit)
         else:
             self.__user_entry = None
 
         if passwort_widget:
             pwd_label = _EntryLabel(passwort_widget.label)
             self.__pwd_entry = _PasswortEntry(passwort_widget.entry,
-                                              on_text_changed=self.__gleich_heits_pruefer)
+                                              on_text_changed=self.__gleich_heits_pruefer,
+                                              onreturn=self.__on_submit)
             self.__pwd_show = _PasswortShowButton(passwort_widget.button, self.__pwd_entry,
                                                   shortcut="ctrl+s", icon=icon)
 
         if passwort_wiederholen_widget:
             pwd2_label = _EntryLabel(passwort_wiederholen_widget.label)
             self.__pwd2_entry = _PasswortEntry(passwort_wiederholen_widget.entry,
-                                               on_text_changed=self.__gleich_heits_pruefer)
+                                               on_text_changed=self.__gleich_heits_pruefer,
+                                               onreturn=self.__on_submit)
             self.__pwd2_show = _PasswortShowButton(passwort_wiederholen_widget.button, self.__pwd2_entry,
                                                    shortcut="ctrl+shift+s", icon=icon)
         else:

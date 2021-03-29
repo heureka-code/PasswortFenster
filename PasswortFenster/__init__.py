@@ -8,7 +8,7 @@ from .__EntryLabel import __doc__ as EntryLabel__doc__
 from .__PasswortSubmit import __doc__ as PasswortSubmit__doc__
 
 __author__ = "heureka-code"
-__version__ = "1.0.2"
+__version__ = "2.0.1"
 __maintainer__ = "heureka-code"
 __annotaions__ = "Beinhaltet die nötigen Module für ein Passworteingabefenster"
 __doc__ = f"\n{'-' * 120}\n".join([PasswortFenster__doc__, UsernameEingabe__doc__, PasswortEingabe__doc__,
