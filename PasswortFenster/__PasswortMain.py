@@ -155,8 +155,9 @@ class PasswortMainWindow(QWidget):
         pass
 
     def __on_submit(self):
-        """Wird ausgeführt, wenn der Submit-Button gedrücktwird und leitet die Eingaben in Form function(Username, Passwort),
-wobei Username immer None ist, wenn kein dafür ausgelegtes Feld gewünscht ist"""
+        """Wird ausgeführt, wenn der Submit-Button gedrücktwird und leitet die Eingaben an function weiter"""
+        if self.__gleich_heits_pruefer() is False:
+            return False
         if self.__user_entry:
             user = self.__user_entry.text()
         else:
@@ -183,12 +184,16 @@ wobei Username immer None ist, wenn kein dafür ausgelegtes Feld gewünscht ist"
         if self.__user_entry:
             if self.__user_entry.text() == "":
                 self.__submit.disable()
+                return False
         if self.__pwd_entry:
             if self.__pwd_entry.text() == "":
                 self.__submit.disable()
+                return False
         if self.__pwd2_entry:
             if self.__pwd2_entry.text() == "" or self.__pwd_entry.text() != self.__pwd2_entry.text():
                 self.__submit.disable()
+                return False
+        return True
         pass
 
     def reset(self):
